@@ -30,11 +30,15 @@ macro avg 0.85 0.84 0.84 91
 weighted avg 0.85 0.85 0.85 91
 ```
 Coincidentally, both performed the exact same. Running and testing the combinations again then gave us different results:
+
 ![image](https://github.com/ShahazHu/HeartDiseaseClassificationTest/assets/61039853/e8154f74-28cd-4cc2-b354-3bb6ed43ef57)
 ![image](https://github.com/ShahazHu/HeartDiseaseClassificationTest/assets/61039853/e6f25989-473d-4a76-b224-89a9c25ba2be)
+
 Now with the newly trained model we see that 10 and 1 are nearly identical, using the information provided from the classification report function, we can break that tiebreaker.
+
 ![image](https://github.com/ShahazHu/HeartDiseaseClassificationTest/assets/61039853/3bd96a35-aa29-47ae-8625-9159294bc1c6)
 ![image](https://github.com/ShahazHu/HeartDiseaseClassificationTest/assets/61039853/f25ed07e-eee4-4c2a-8cb1-3aefc06f40f6)
+
 Parameter combination 1 has a slightly higher AUC of 0.8390 compared to the second model which has an AUC of 0.8324. Therefore, the first model performed better in terms of AUC.
 
 Looking at the classification reports, the first model has slightly higher precision for the positive class (presence of heart disease) compared to the second model, while the second model has slightly higher recall for the positive class. However, the overall F1 score is similar for both models, indicating a similar balance between precision and recall.
