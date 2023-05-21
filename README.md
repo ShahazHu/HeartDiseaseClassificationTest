@@ -3,6 +3,7 @@ The project involves using AI in healthcare applications. Given a dataset contai
 
 ## Evaluation
 Testing the first model, we got an accuracy of 0.7912 and an AUC score of 0.7859. The next goal was to test different parameters and see which one would perform the best. The following list of parameters were used to test the model:
+```
 {'layer1': 32, 'layer2': 64, 'activation': 'relu', 'optimizer': 'adam', 'epochs': 100},
 {'layer1': 64, 'layer2': 32, 'activation': 'relu', 'optimizer': 'adam', 'epochs': 100},
 {'layer1': 32, 'layer2': 64, 'activation': 'relu', 'optimizer': 'adam', 'epochs': 50},
@@ -14,7 +15,7 @@ Testing the first model, we got an accuracy of 0.7912 and an AUC score of 0.7859
 {'layer1': 64, 'layer2': 32, 'activation': 'sigmoid', 'optimizer': 'sgd', 'epochs': 100},
 {'layer1': 32, 'layer2': 64, 'activation': 'relu', 'optimizer': 'sgd', 'epochs': 100},
 {'layer1': 64, 'layer2': 32, 'activation': 'relu', 'optimizer': 'sgd', 'epochs': 100}
-
+```
 
 
 ## Conclusion
